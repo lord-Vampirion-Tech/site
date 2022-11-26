@@ -1,0 +1,146 @@
+:root {
+  --collor1: #ffffff;
+  --collor2: #cdd4da;
+  --collor3: #6b7e90;
+  --collor4: #6b7e90;
+  --collor5: #3a536b;
+  --collor6: #082847;
+  --collor7: #03111f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--collor2);
+  color: var(--collor6);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* ======== шапка ======== */
+.header {
+  padding: 100px 200px;
+  background: linear-gradient(var(--collor6) 95%, var(--collor2) 100%);
+  color: var(--collor1);
+
+  display: flex;
+  align-self: center;
+  justify-content: start;
+
+  margin-bottom: 50px;
+}
+
+.header_photo {
+  width: 200px;
+  margin: 0 50px;
+}
+
+.header_title {
+  padding-top: 50px;
+}
+
+/* ======== основное ======== */
+.main, .form {
+  padding: 0 200px;
+}
+
+.content, .content_text, .content_block {
+  margin: 20px 0;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.content_block {
+  display: flex;
+  justify-content: start;
+}
+
+.content_block>p {
+  width: 250px;
+}
+
+.ex {
+  margin-left: 250px;
+}
+
+/* ======== форма ======== */
+.form {
+  padding-top: 20px;
+  text-align: center;
+  color: var(--collor6);
+  background: linear-gradient(var(--collor2) 1%, var(--collor3) 5%);
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrapper_text{
+  background-color: transparent;
+  outline: none;
+  margin: 10px 0;
+  border: none;
+
+  border-bottom: solid 5px var(--collor7);
+}
+
+.form_input{
+  width: 45%;
+  text-align: left;
+}
+.form_wrapper_text, input.form_input{
+  width: 100%;
+}
+
+button{
+  width: 160px;
+  height: 50px;
+  background-color: var(--collor6);
+  color: var(--collor1);
+  border: none;
+}
+button:hover{
+  background-color: var(--collor5);
+
+}
+/* ======== подвал ======== */
+.footer {
+  padding: 50px 0 0 0;
+  text-align: center;
+  background: linear-gradient(var(--collor3) 5%, var(--collor4) 10%, var(--collor7) 15%);
+  color: var(--collor2);
+}
+
+.footer_title, .list, .footer>p{
+padding: 20px 0;
+}
+
+.list{
+  list-style:none; 
+  display: flex; 
+  justify-content: space-around;
+}
+.list_item>a{
+  text-decoration:none;
+  color: var(--collor2);
+}
+
+a:hover {
+  color: var(--collor1);
+}
+
+a:not(:hover) {
+  color: var(--collor2);
+}
+/* ======== конец ======== */
